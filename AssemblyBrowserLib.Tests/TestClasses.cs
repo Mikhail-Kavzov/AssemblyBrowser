@@ -11,17 +11,11 @@ namespace AssemblyBrowserLib.Tests
 
     public static class TestClass2
     {
-        public static void DoNothing(this string str)
-        {
-            Console.WriteLine("Nothing");
-        }
+        public static void Method1(this string str) => Console.WriteLine(str);
 
-        public static void DoNothing(this string str, bool isNothing)
-        {
-            Console.WriteLine("Nothing");
-        }
+        public static void Method2(this string str, bool someValue) => Console.WriteLine(someValue.ToString(), str);
 
-        public static string DoReturn(this string str) => str;
+        public static string ReturnMethod(this string str) => str;
     }
 
     internal class TestClass3<T> where T : class, new()
@@ -45,8 +39,8 @@ namespace AssemblyBrowserLib.Tests
 
     public enum TestEnum
     {
-        Value1,
-        Value2,
-        Value3
+        Num1,
+        Num2,
+        Num3
     }
 }
