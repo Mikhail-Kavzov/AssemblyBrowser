@@ -69,7 +69,7 @@
                             BorderBrush="{DynamicResource TextColorBrush}"
                             Background="{DynamicResource Color2Brush}">
                         <TextBlock Foreground="{DynamicResource TextColorBrush}" FontSize="16" 
-                                   Text="{Binding Title}"/>
+                                   Text="{Binding FullSignature}"/>
                     </Border>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
